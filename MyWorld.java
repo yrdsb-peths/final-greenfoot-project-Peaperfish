@@ -11,7 +11,8 @@ public class MyWorld extends World
 {
     // money to start with
     public static int money = 100;
-    //public static int 
+    
+    int basicTowerPrice = 50;
     
     
     /**
@@ -69,10 +70,14 @@ public class MyWorld extends World
      *  add tower and the tower would snap on to the grid
      */
     public void addInTower() {
-        if (Greenfoot.mouseClicked(null) && Greenfoot.getMouseInfo().getActor() == null) {
+        if (Greenfoot.mouseClicked(null) && Greenfoot.getMouseInfo().getActor() == null && money >= basicTowerPrice) {
             
+            // tower will snap on to the grid
             addObject(new Tower(), (Greenfoot.getMouseInfo().getX() / 60) * 60 + 30,
             (Greenfoot.getMouseInfo().getY() / 60) * 60 + 30);
+            
+            // one tower cost 50
+            money -= basicTowerPrice;
         }
     }
 }
