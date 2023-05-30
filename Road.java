@@ -12,9 +12,14 @@ public class Road extends Actor
      * road
      */
     
-    public Road() {
+    public Road(boolean straight) {
         getImage().scale(60, 60);
     }
+    
+    public Road(int tuen) {
+        getImage().scale(60, 60);
+    }
+    
     
     public void act()
     {
