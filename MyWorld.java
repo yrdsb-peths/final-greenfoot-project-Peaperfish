@@ -9,6 +9,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
+    // money to start with
+    public static int money = 100;
+    //public static int 
+    
     
     /**
      * Constructor for objects of class MyWorld.
@@ -17,16 +21,21 @@ public class MyWorld extends World
     
     public MyWorld()
     {    
-        // Create a new world with 15 x 10 cells with a cell size of 60 x 60 pixels.
+        // Create a new world with 840 x 600 cells with a cell size of 1 x 1 pixels.
         super(840, 600, 1);
         Menu menu = new Menu();
         addObject(menu,730,230);
         menu.setLocation(720,300);
         Leave1();
+        showText("Money: " + money, 660, 30);
     }    
     
+    /**
+     * act
+     */
     public void act() {
         addInTower();
+        showText("Money: " + money, 660, 30);
     }
     
     /**

@@ -3,7 +3,7 @@ import greenfoot.*;
 public class Tower extends Actor {
     
     /**
-     * Create a tower that will shoot the bad guys
+     * Create a tower that will shoot the target 
      */
     
     // tower
