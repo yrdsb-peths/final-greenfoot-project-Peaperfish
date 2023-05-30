@@ -26,6 +26,7 @@ public class MyWorld extends World
         super(840, 600, 1);
         Menu menu = new Menu();
         addObject(menu,730,230);
+        menu.setLocation(720,300);
         addObject(new MoneyDisplay(), 720, 30);
         Leave1();
     }    
