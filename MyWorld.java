@@ -60,7 +60,8 @@ public class MyWorld extends World
     
     public void addInTower() {
         if (Greenfoot.mouseClicked(null)) {
-            addObject(new Tower(), Greenfoot.getMouseInfo().getX(),Greenfoot.getMouseInfo().getY());
+            addObject(new Tower(), (Greenfoot.getMouseInfo().getX() / 60) * 60 + 30,
+            (Greenfoot.getMouseInfo().getY() / 60) * 60 + 30);
         }
     }
 }
