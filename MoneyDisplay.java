@@ -12,12 +12,16 @@ public class MoneyDisplay extends Actor
      * label to show the amount of money 
      */
     
+    MyWorld game;
+    
     public MoneyDisplay() {
-        setImage(new GreenfootImage("Money: ", 25, Color.BLACK, new Color(0, 0, 0, 0)));
+        setImage(new GreenfootImage("Money: " + game.money, 35, Color.BLACK, 
+        new Color(0, 0, 0, 0)));
     }
     
     public void act()
     {
-        // Add your action code here.
+        setImage(new GreenfootImage("Money: " + game.money, 35, Color.BLACK, 
+        new Color(0, 0, 0, 0)));
     }
 }
