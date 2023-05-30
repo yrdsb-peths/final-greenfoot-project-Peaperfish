@@ -15,7 +15,20 @@ public class MyWorld extends World
      * 
      */
     
-    // creating an array for the map/road
+    public MyWorld()
+    {    
+        // Create a new world with 15 x 10 cells with a cell size of 60 x 60 pixels.
+        super(840, 600, 1);
+        Menu menu = new Menu();
+        addObject(menu,730,230);
+        menu.setLocation(720,300);
+        Leave1();
+        addInTower();
+    }    
+    
+    /**
+     *  creating an array for the map/road
+     */
     int map [][] = { {0, 0, 0, 0, 0, 1, 1, 1, 0, 0},
                      {1, 1, 0, 0, 0, 1, 0, 1, 0, 0},
                      {0, 1, 0, 1, 1, 1, 0, 1, 1, 0},
@@ -28,15 +41,6 @@ public class MyWorld extends World
                      {0, 0, 1, 1, 1, 0, 0, 0, 0, 0},
                     };
     
-    public MyWorld()
-    {    
-        // Create a new world with 15 x 10 cells with a cell size of 60 x 60 pixels.
-        super(840, 600, 1);
-        Leave1();
-        Menu menu = new Menu();
-        addObject(menu,730,230);
-        menu.setLocation(720,300);
-    }
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
