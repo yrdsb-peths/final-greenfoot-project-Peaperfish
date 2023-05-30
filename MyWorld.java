@@ -28,6 +28,7 @@ public class MyWorld extends World
     public void act() {
         addInTower();
     }
+    
     /**
      *  creating an array for the map/road
      */
@@ -44,8 +45,7 @@ public class MyWorld extends World
                     };
     
     /**
-     * Prepare the world for the start of the program.
-     * That is: create the initial objects and add them to the world.
+     * level one 
      */
     private void Leave1()
     {
@@ -58,8 +58,12 @@ public class MyWorld extends World
         }
     }
     
+    /**
+     *  add tower and the tower would snap on to the grid
+     */
     public void addInTower() {
-        if (Greenfoot.mouseClicked(null)) {
+        if (Greenfoot.mouseClicked(null) && Greenfoot.getMouseInfo().getActor() == null) {
+            
             addObject(new Tower(), (Greenfoot.getMouseInfo().getX() / 60) * 60 + 30,
             (Greenfoot.getMouseInfo().getY() / 60) * 60 + 30);
         }
