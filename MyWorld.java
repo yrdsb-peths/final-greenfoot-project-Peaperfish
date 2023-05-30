@@ -23,9 +23,11 @@ public class MyWorld extends World
         addObject(menu,730,230);
         menu.setLocation(720,300);
         Leave1();
-        addInTower();
     }    
     
+    public void act() {
+        addInTower();
+    }
     /**
      *  creating an array for the map/road
      */
@@ -53,6 +55,12 @@ public class MyWorld extends World
                     addObject(new Road(), 30 + i * 60, 30 + j * 60);
                 }
             }
+        }
+    }
+    
+    public void addInTower() {
+        if (Greenfoot.mouseClicked(null)) {
+            addObject(new Tower(), Greenfoot.getMouseInfo().getX(),Greenfoot.getMouseInfo().getY());
         }
     }
 }
