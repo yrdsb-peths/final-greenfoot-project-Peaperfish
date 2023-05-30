@@ -13,7 +13,7 @@ public class MoneyDisplay extends Actor
      */
     
     public MoneyDisplay() {
-        setImage(new GreenfootImage("", 20, Color.BLACK, Color.WHITE));
+        setImage(new GreenfootImage("Money: ", 25, Color.BLACK, new Color(0, 0, 0, 0)));
     }
     
     public void act()
