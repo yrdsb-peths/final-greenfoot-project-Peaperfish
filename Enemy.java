@@ -15,6 +15,16 @@ public class Enemy extends Actor {
     // ballons hp
     public int health = 5;
     
+    public Enemy(int level) {
+        if(level == 1) {
+             setImage("balloon1.png");
+        }
+        
+        if(level == 2) {
+            setImage("balloon2.png");
+        }
+    }
+    
     // act
     public void act() {
         moveAlongPath();

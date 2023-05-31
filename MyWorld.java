@@ -16,6 +16,8 @@ public class MyWorld extends World
     
     int worldTime;
     
+    int waveNumber = 1;
+    
     /**
      *  creating an array for the map/road
      */
@@ -108,8 +110,15 @@ public class MyWorld extends World
     }
     
     public void spawnWave() {
+        // first wave
         if(worldTime % 20 == 0) {
-            addObject(new Enemy(), 1, 90);
+            addObject(new Enemy(waveNumber), 1, 90);
         }
+        
+        //second wave
+        if(worldTime % 400 == 0) {
+            waveNumber++;
+        }
+        
     }
 }
