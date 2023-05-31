@@ -80,6 +80,9 @@ public class Enemy extends Actor {
             world.money += 50;
             getWorld().removeObject(this);
         }
+        else if(isAtEdge()) {
+            getWorld().removeObject(this);
+        }
     }
 }
 
