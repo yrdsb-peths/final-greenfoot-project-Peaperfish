@@ -7,6 +7,8 @@ public class Tower extends Actor {
      * Create a tower that will shoot the target 
      */
     
+    int fireRate = 0;
+    
     // tower
     public Tower() {
         GreenfootImage image = getImage(); 
@@ -21,12 +23,17 @@ public class Tower extends Actor {
         enemyDetector();
     }
     
-    public void enemyDetector() {
+    public void enemyDetector() { 
+        fireRate++;
         List<Enemy> enemies = getObjectsInRange(100, Enemy.class);
+        
         for(Enemy eachEnemy : enemies) {
-            Projectile projectile = new Projectile();
-            getWorld().addObject(projectile, getX(), getY());
-            projectile.turnTowards(eachEnemy.getX(), eachEnemy.getY());
+            if(fireRate > 11) {
+                Projectile projectile = new Projectile();
+                getWorld().addObject(projectile, getX(), getY());
+                projectile.turnTowards(eachEnemy.getX(), eachEnemy.getY());
+                fireRate = 0;
+            }
         }
     }
 }
