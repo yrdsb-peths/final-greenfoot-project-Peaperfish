@@ -9,18 +9,24 @@ import java.util.List;
  */
 
 public class Enemy extends Actor {
-    
+    // calls world for access 
     MyWorld world;
+    
+    // ballons hp
     public int health = 5;
     
+    // act
     public void act() {
         moveAlongPath();
         hitByProjectile();
     }
     
+    
     public void moveAlongPath() {
+        // moving speed
         move(2);
         
+        // making the balloon turn
         List <Road> road0 = getObjectsAtOffset(0, -30, Road.class);
         for (Road roads : road0) {
             if (roads.straight == false && getRotation() == 90) {
@@ -52,10 +58,14 @@ public class Enemy extends Actor {
     
     public void hitByProjectile() {
         Actor projectile = getOneIntersectingObject(Projectile.class);
+        
+        // remove projectile after it hits the balloon
         if(projectile != null) {
             health--;
             getWorld().removeObject(projectile);
         }
+        
+        // remove balloon after it has less than 0 hp
         if(health < 1) {
             world.money += 50;
             getWorld().removeObject(this);
