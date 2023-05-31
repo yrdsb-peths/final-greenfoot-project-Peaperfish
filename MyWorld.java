@@ -44,6 +44,8 @@ public class MyWorld extends World
         addObject(menu,730,230);
         menu.setLocation(720,300);
         addObject(new MoneyDisplay(), 720, 30);
+        
+        
         Leave1();
     }    
     
@@ -52,6 +54,8 @@ public class MyWorld extends World
      */
     public void act() {
         addInTower();
+        spawnWave();
+        worldTime++;
     }
 
     
@@ -100,6 +104,12 @@ public class MyWorld extends World
             
             // one tower cost 50
             money -= basicTowerPrice;
+        }
+    }
+    
+    public void spawnWave() {
+        if(worldTime % 20 == 0) {
+            addObject(new Enemy(), 1, 90);
         }
     }
 }
