@@ -11,6 +11,11 @@ import java.util.List;
 public class Enemy extends Actor {
     
     public void act() {
+        moveAlongPath();
+        hitByProjectile();
+    }
+    
+    public void moveAlongPath() {
         move(2);
         
         List <Road> road0 = getObjectsAtOffset(0, -30, Road.class);
@@ -41,4 +46,24 @@ public class Enemy extends Actor {
             }
         }
     }
+    
+    public void hitByProjectile() {
+        Actor projectile = getOneIntersectingObject(Projectile.class);
+        if(projectile != null) {
+            getWorld().removeObject(projectile);
+        }
+    }
 }
+
+    
+
+
+
+
+
+
+
+
+
+
+
