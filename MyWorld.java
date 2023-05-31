@@ -23,7 +23,7 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 840 x 600 cells with a cell size of 1 x 1 pixels.
-        super(840, 600, 1);
+        super(840, 600, 1, false);
         Menu menu = new Menu();
         addObject(menu,730,230);
         menu.setLocation(720,300);
