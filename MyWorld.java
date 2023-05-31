@@ -64,19 +64,19 @@ public class MyWorld extends World
                     addObject(new Road(true), 30 + i * 60, 30 + j * 60);
                 }
                 
-                if(map[j] [i] == 2) {
+                if(map[j] [i] == 3) {
                     addObject(new Road(0), 30 + i * 60, 30 + j * 60);
                 }
                 
-                if(map[j] [i] == 3) {
+                if(map[j] [i] == 2) {
                     addObject(new Road(90), 30 + i * 60, 30 + j * 60);
                 }
                 
-                if(map[j] [i] == 4) {
+                if(map[j] [i] == 5) {
                     addObject(new Road(180), 30 + i * 60, 30 + j * 60);
                 }
                 
-                if(map[j] [i] == 5) {
+                if(map[j] [i] == 4) {
                     addObject(new Road(270), 30 + i * 60, 30 + j * 60);
                 }
             }

@@ -20,7 +20,7 @@ public class Road extends Actor
         this.straight = straight;
     }
     
-    public Road(int tuen) {
+    public Road(int turn) {
         getImage().scale(60, 60);
         this.turn = turn;
     }
