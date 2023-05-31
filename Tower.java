@@ -1,4 +1,5 @@
 import greenfoot.*;
+import java.util.List;
 
 public class Tower extends Actor {
     
@@ -15,7 +16,17 @@ public class Tower extends Actor {
         setImage(image); 
     }
     
+    
     public void act() {
-        // Add your action code here.
+        enemyDetector();
+    }
+    
+    public void enemyDetector() {
+        List<Enemy> enemies = getObjectsInRange(100, Enemy.class);
+        for(Enemy eachEnemy : enemies) {
+            Projectile projectile = new Projectile();
+            getWorld().addObject(projectile, getX(), getY());
+            projectile.turnTowards(eachEnemy.getX(), eachEnemy.getY());
+        }
     }
 }
