@@ -10,6 +10,9 @@ import java.util.List;
 
 public class Enemy extends Actor {
     
+    MyWorld world;
+    public int health = 5;
+    
     public void act() {
         moveAlongPath();
         hitByProjectile();
@@ -50,7 +53,12 @@ public class Enemy extends Actor {
     public void hitByProjectile() {
         Actor projectile = getOneIntersectingObject(Projectile.class);
         if(projectile != null) {
+            health--;
             getWorld().removeObject(projectile);
+        }
+        if(health < 1) {
+            world.money += 50;
+            getWorld().removeObject(this);
         }
     }
 }
