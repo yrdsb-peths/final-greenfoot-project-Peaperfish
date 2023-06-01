@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class MoneyyDisplay here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Brian Wang
+ * @version June 2023
  */
 public class MoneyDisplay extends Actor
 {

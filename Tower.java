@@ -1,6 +1,13 @@
 import greenfoot.*;
 import java.util.List;
 
+/**
+ * tower who shoots the bad guys
+ * 
+ * @author Brian Wang
+ * @version June 2023
+ */
+
 public class Tower extends Actor {
     
     /**
