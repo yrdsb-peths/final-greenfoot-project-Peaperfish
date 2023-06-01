@@ -13,7 +13,7 @@ public class Enemy extends Actor {
     MyWorld world;
     
     // ballons hp
-    public int health = 5;
+    public int health = 6;
     
     public Enemy(int level) {
         if(level == 1) {
@@ -77,7 +77,7 @@ public class Enemy extends Actor {
         
         // remove balloon after it has less than 0 hp
         if(health < 1) {
-            world.money += 50;
+            world.money += 25;
             getWorld().removeObject(this);
         }
         else if(isAtEdge()) {

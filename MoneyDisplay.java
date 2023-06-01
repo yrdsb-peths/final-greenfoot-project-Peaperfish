@@ -15,7 +15,7 @@ public class MoneyDisplay extends Actor
     MyWorld game;
     
     public MoneyDisplay() {
-        setImage(new GreenfootImage("Money: " + game.money, 35, Color.BLACK, 
+        setImage(new GreenfootImage("Money: $" + game.money, 35, Color.BLACK, 
         new Color(0, 0, 0, 0)));
     }
     
