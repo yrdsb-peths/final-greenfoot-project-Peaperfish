@@ -48,7 +48,7 @@ public class MyWorld extends World
         addObject(new MoneyDisplay(), 720, 30);
         
         
-        Leave1();
+        Level1();
     }    
     
     /**
@@ -64,7 +64,7 @@ public class MyWorld extends World
     /**
      * level one 
      */
-    private void Leave1()
+    private void Level1()
     {
         for(int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
