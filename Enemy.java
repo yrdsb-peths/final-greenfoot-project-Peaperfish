@@ -23,6 +23,10 @@ public class Enemy extends Actor {
         if(level == 2) {
             setImage("balloon2.png");
         }
+        
+        if(level == 3) {
+            setImage("balloon3.png");
+        }
     }
     
     // act
