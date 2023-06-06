@@ -35,7 +35,7 @@ This game is released under the [MIT License](https://github.com/yrdsb-peths/fin
   - Part 2: https://youtu.be/TwID9i0Ey6o
   - Part 3: https://youtu.be/GT-eFwa4Abc
  
-- Art asset
+- Art asset:
   - Tower  asset from [Unity](https://assetstore.unity.com/packages/2d/environments/isometric-tower-defense-pack-183472)
   - Grass Road asset from [2dgameartguru.com](https://2dgameartguru.com/creating-seamless-2d-grass-tiles-in-vectors-using-inkscape/)
 
