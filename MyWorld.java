@@ -121,6 +121,14 @@ public class MyWorld extends World
         if(worldTime % 400 == 399) {
             waveNumber++;
         }
+    }
+    /*
+
+    public void dead() {
+        if (hp <= 0) {
+            
+        }
         
     }
+    */
 }
