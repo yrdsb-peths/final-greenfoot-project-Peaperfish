@@ -12,6 +12,8 @@ public class MyWorld extends World
     // money to start with
     public static int money = 100;
     
+    public static int hp = 100;
+    
     int basicTowerPrice = 50;
     
     int worldTime;
