@@ -29,7 +29,7 @@ This game is released under the [MIT License](https://github.com/yrdsb-peths/fin
 
 ## Credits
 
-- Game developed by [[Brian Wang]](https://github.com/Peaperfish)
+- Game developed by [Brian Wang](https://github.com/Peaperfish)
 - Mr. Chan Greenfoot Video Tutorials: 
   - Part 1: https://youtu.be/zxaa3X0MihI
   - Part 2: https://youtu.be/TwID9i0Ey6o
