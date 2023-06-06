@@ -20,7 +20,8 @@ This is a simplified version of [Bloon TD 6](https://ninjakiwi.com/Games/Mobile/
 
 ## Dependencies
 
-- The game is built using the Greenfoot framework.
+- The game is built using the [Greenfoot](https://www.greenfoot.org/door) framework.
+- Download [Greenfoot](https://www.greenfoot.org/download)
 
 ## License
 
