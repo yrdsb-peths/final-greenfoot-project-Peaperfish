@@ -118,7 +118,7 @@ public class MyWorld extends World
         }
         
         //second wave
-        if(worldTime % 400 == 399) {
+        if(worldTime % 400 == 399) { 
             waveNumber++;
         }
     }
