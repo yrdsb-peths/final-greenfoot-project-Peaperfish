@@ -1,6 +1,6 @@
-# Cheap Bloon TD Game
+# Simplified Bloon TD Game 🎈
 
-This is a simplified version of [Bloon TD 6](https://ninjakiwi.com/Games/Mobile/Bloons-TD-6.html).
+This is a simplified version of [Bloon TD 6](https://ninjakiwi.com/Games/Mobile/Bloons-TD-6.html)
 
 ## Game Mechanics
 
