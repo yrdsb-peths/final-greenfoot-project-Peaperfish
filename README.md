@@ -4,7 +4,7 @@ This is a simplified version of [Bloon TD 6](https://ninjakiwi.com/Games/Mobile/
 
 ## Game Mechanics
 
-- Ultimate goal is to pop as much Balloons is player possible can without dying.
+- Ultimate goal is to pop as much Balloons as player possible can without dying.
 - Towers will shoot Balloons automatically.
 - Player starts the game with 100 hp (health point).
 - Player starts the game with $100.
