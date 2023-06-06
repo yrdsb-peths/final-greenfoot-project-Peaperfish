@@ -86,6 +86,7 @@ public class Enemy extends Actor {
         }
         else if(isAtEdge()) {
             getWorld().removeObject(this);
+            world.hp -= 10;
         }
     }
 }
