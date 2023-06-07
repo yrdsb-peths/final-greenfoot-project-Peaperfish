@@ -17,18 +17,27 @@ public class TitleScreen extends World
     public TitleScreen()
     {
         super(840, 600, 1);
-        //prepare();
+        prepare();
     }
 
     /**
      * Prepare the title screen.
      */
-   // private void prepare()
-   // {
-   //     // Create the start button and add it to the world
-   //     startButton = new StartButton();
-   //     addObject(startButton, getWidth() / 2, getHeight() / 2);
-   // }
+    private void prepare()
+    {
+        // Load the background image
+        GreenfootImage backgroundImage = new GreenfootImage("title-screen.png");
+        
+        // Resize the background image to match the world size
+        backgroundImage.scale(getWidth(), getHeight());
+        
+        // Set the resized image as the background
+        setBackground(backgroundImage);
+
+        // Create the start button and add it to the world
+        startButton = new StartButton();
+        addObject(startButton, getWidth() / 2, getHeight() / 2);
+    }
 
     /**
      * Act method of the title screen.
@@ -40,4 +49,3 @@ public class TitleScreen extends World
         }
     }
 }
-

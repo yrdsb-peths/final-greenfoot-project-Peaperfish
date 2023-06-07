@@ -21,7 +21,7 @@ public class MyWorld extends World
     int waveNumber = 1;
     
     /**
-     *  creating an array for the map/road
+     *  creating an 2d array for the map/road
      */
     int map [][] = { {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
                      {1, 1, 2, 0, 3, 1, 1, 1, 1, 2},
