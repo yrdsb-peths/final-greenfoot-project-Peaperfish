@@ -1,19 +1,32 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
 /**
- * Write a description of class StartButton here.
+ * A button that starts the game when clicked.
+ * It displays the "Start" label.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Brian
+ * @version June 2023
  */
 public class StartButton extends Actor
 {
     /**
-     * Act - do whatever the StartButton wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Constructor for objects of class StartButton.
+     */
+    public StartButton()
+    {
+        // Set the initial image of the button
+        GreenfootImage image = new GreenfootImage("start-button.png");
+        setImage(image);
+    }
+
+    /**
+     * Act method of the start button.
+     * Detects when the button is clicked by the player.
      */
     public void act()
     {
-        // Add your action code here.
+        if (Greenfoot.mouseClicked(this)) {
+            Greenfoot.setWorld(new MyWorld());
+        }
     }
 }
