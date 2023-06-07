@@ -6,18 +6,38 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author Brian Wang
  * @version June 2023
  */
+
 public class TitleScreen extends World
 {
+    private StartButton startButton;
 
     /**
      * Constructor for objects of class TitleScreen.
-     * 
      */
     public TitleScreen()
-    {    
-        // Create a new world with 840 x 600 cells with a cell size of 1 x 1 pixels.
-        super(840, 600, 1); 
-        //TryAgain tryAgain = new TryAgain("try-again.png");
-        
+    {
+        super(840, 600, 1);
+        //prepare();
+    }
+
+    /**
+     * Prepare the title screen.
+     */
+   // private void prepare()
+   // {
+   //     // Create the start button and add it to the world
+   //     startButton = new StartButton();
+   //     addObject(startButton, getWidth() / 2, getHeight() / 2);
+   // }
+
+    /**
+     * Act method of the title screen.
+     */
+    public void act()
+    {
+        if (Greenfoot.mouseClicked(startButton)) {
+            Greenfoot.setWorld(new MyWorld());
+        }
     }
 }
+
