@@ -12,7 +12,7 @@ public class TryAgain extends Actor {
     private GreenfootImage buttonImage;
     
     public TryAgain() {
-        buttonImage = new GreenfootImage("try-again.png"); // Replace "try_again_button.png" with the actual image file for the try again button
+        buttonImage = new GreenfootImage("try-again.png");
         setImage(buttonImage);
     }
     

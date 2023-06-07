@@ -21,7 +21,7 @@ public class MoneyDisplay extends Actor
     
     public void act()
     {
-        setImage(new GreenfootImage("Money: " + game.money, 35, Color.BLACK, 
+        setImage(new GreenfootImage("Money: $" + game.money, 35, Color.BLACK, 
         new Color(0, 0, 0, 0)));
         
         // cheat to reset the money
