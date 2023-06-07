@@ -51,6 +51,9 @@ public class MyWorld extends World
         
         
         Level1();
+        
+        TryAgain tryAgainButton = new TryAgain();
+        addObject(tryAgainButton, 720, 500);
     }    
     
     /**
@@ -122,13 +125,8 @@ public class MyWorld extends World
             waveNumber++;
         }
     }
-    /*
+    
+    
+    
 
-    public void dead() {
-        if (hp <= 0) {
-            
-        }
-        
-    }
-    */
 }
