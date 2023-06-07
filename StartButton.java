@@ -17,6 +17,7 @@ public class StartButton extends Actor
         // Set the initial image of the button
         GreenfootImage image = new GreenfootImage("start-button.png");
         setImage(image);
+        getImage().scale(256, 256);
     }
 
     /**
