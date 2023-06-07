@@ -8,23 +8,21 @@ import greenfoot.GreenfootImage;
  * @version June 2023
  */
 
-public class TryAgain extends Actor
-{
-    public void tryAgainImage() {
-        GreenfootImage image = getImage(); 
-        int newWidth = image.getWidth();
-        int newHeight = image.getHeight();
-        image.scale(60, 60);
-        setImage(image);
+public class TryAgain extends Actor {
+    private GreenfootImage buttonImage;
+    
+    public TryAgain() {
+        buttonImage = new GreenfootImage("try-again.png"); // Replace "try_again_button.png" with the actual image file for the try again button
+        setImage(buttonImage);
     }
-
-    /**
-     * Act - do whatever the TryAgain wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-
-    public void act()
-    {
-        tryAgainImage();
+    
+    public void act() {
+        if (Greenfoot.mouseClicked(this)) {
+            Greenfoot.setWorld(new MyWorld());
+        }
     }
 }
+
+
+
+
