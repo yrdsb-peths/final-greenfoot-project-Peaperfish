@@ -18,6 +18,10 @@ public class EndScreen extends World
         // Create a new world with 840 x 600 cells with a cell size of 1 x 1 pixels.
         super(840, 600, 1); 
         prepare();
+        
+        GreenfootImage tryAgainImage = new GreenfootImage("end-screen.png");
+        setBackground(tryAgainImage);
+        tryAgainImage.scale(getWidth(), getHeight());
     }
     
     /**
