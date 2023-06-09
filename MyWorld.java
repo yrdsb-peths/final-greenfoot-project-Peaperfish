@@ -56,7 +56,7 @@ public class MyWorld extends World
         healthDisplay = new HealthDisplay(hp);
         addObject(healthDisplay, 720, 80);
         
-        showText("HP: " + hp, 720, 80);
+        //showText("HP: " + hp, 720, 80);
         
         Level1();
         
