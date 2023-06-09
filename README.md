@@ -25,7 +25,7 @@ This is a simplified version of [Bloon TD 6](https://ninjakiwi.com/Games/Mobile/
 
 ## License
 
-This game is released under the [MIT License](https://github.com/yrdsb-peths/final-greenfoot-project-Peaperfish/blob/main/MIT%20License.md). You are free to use, modify, and distribute the game for personal or commercial purposes.
+This game is released under the [MIT License](https://github.com/yrdsb-peths/final-greenfoot-project-Peaperfish/blob/main/LICENSE). You are free to use, modify, and distribute the game for personal or commercial purposes.
 
 ## Credits
 
