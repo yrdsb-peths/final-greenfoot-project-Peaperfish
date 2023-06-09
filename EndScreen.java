@@ -20,20 +20,27 @@ public class EndScreen extends World
         prepare();
     }
     
+    /**
+     * Prepare the title screen.
+     */
     private void prepare() {
         // Display the game over message
         showText("Game Over", getWidth() / 2, getHeight() / 2 - 50);
 
-        // Create the restart button and add it to the world
-        TryAgain tryAgain = new TryAgain();
-        addObject(tryAgain, getWidth() / 2, getHeight() / 2 + 50);
-    }
-    
-    
-    public void act() {
-        if (Greenfoot.mouseClicked(_obj_)) {
+        // Create the try again button and add it to the world
+        TryAgain tryAgainButton = new TryAgain();
+        addObject(tryAgainButton, getWidth() / 2, getHeight() / 2 + 50);
+        
+        if (Greenfoot.mouseClicked(tryAgainButton)) {
             Greenfoot.setWorld(new MyWorld());
         }
     }
-    
+
+    /**
+     * Act method of the title screen.
+     */
+    public void act() {
+
+    }
 }
+

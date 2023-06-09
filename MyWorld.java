@@ -20,6 +20,10 @@ public class MyWorld extends World
     
     int waveNumber = 1;
     
+    private boolean gameEnded;
+    
+    private HealthDisplay healthDisplay;
+    
     /**
      *  creating an 2d array for the map/road
      */
@@ -49,6 +53,10 @@ public class MyWorld extends World
         menu.setLocation(720,300);
         addObject(new MoneyDisplay(), 720, 30);
         
+        healthDisplay = new HealthDisplay(hp);
+        addObject(healthDisplay, 720, 80);
+        
+        showText("HP: " + hp, 720, 80);
         
         Level1();
         
@@ -60,9 +68,11 @@ public class MyWorld extends World
      * act
      */
     public void act() {
-        addInTower();
-        spawnWave();
-        worldTime++;
+        if (!gameEnded) {
+            addInTower();
+            spawnWave();
+            worldTime++;
+        }
     }
 
     
@@ -95,7 +105,7 @@ public class MyWorld extends World
             }
         }
         
-
+        hp = 100;
 
     }
     
@@ -124,9 +134,28 @@ public class MyWorld extends World
         if(worldTime % 400 == 399) { 
             waveNumber++;
         }
+        
+            if (hp <= 0) {
+                endGame();
+        }
     }
     
-    
+    public void decreaseHP(int amount) {
+        hp -= amount;
+        
+        HealthDisplay healthDisplay = getObjects(HealthDisplay.class).get(0);
+        healthDisplay.updateHP(hp);
+
+        // Check if the game should end (HP reaches 0)
+        if (hp <= 0) {
+            endGame();
+        }
+    }
+
+    private void endGame() {
+        gameEnded = true;
+        Greenfoot.setWorld(new EndScreen());
+    }
     
 
 }
