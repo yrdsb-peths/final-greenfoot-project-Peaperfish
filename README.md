@@ -17,6 +17,7 @@ This is a simplified version of [Bloon TD 6](https://ninjakiwi.com/Games/Mobile/
 ## Controls
 
 - Left Mouse Click: Place down a Tower on the map
+- Right Mouse Click: Remove an existing Tower
 
 ## Dependencies
 
