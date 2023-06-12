@@ -1,6 +1,6 @@
 # Simplified Bloon TD Game 🎈
 
-This is a simplified version of [Bloon TD 6](https://ninjakiwi.com/Games/Mobile/Bloons-TD-6.html)
+This is a simplified version of [Bloon TD 6](https://ninjakiwi.com/Games/Mobile/Bloons-TD-6.html).
 
 ## Game Mechanics
 
@@ -16,13 +16,13 @@ This is a simplified version of [Bloon TD 6](https://ninjakiwi.com/Games/Mobile/
 
 ## Controls
 
-- Left Mouse Click: Place down a Tower on the map
-- Right Mouse Click: Remove an existing Tower
+- Left Mouse Click: Place down a Tower on the map.
+- Right Mouse Click: Remove an existing Tower.
 
 ## Dependencies
 
 - The game is built using the [Greenfoot](https://www.greenfoot.org/door) framework.
-- Download [Greenfoot](https://www.greenfoot.org/download)
+- Download [Greenfoot](https://www.greenfoot.org/download).
 
 ## License
 
