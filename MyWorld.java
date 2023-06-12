@@ -24,6 +24,10 @@ public class MyWorld extends World
     
     private HealthDisplay healthDisplay;
     
+    private int balloonCounter;
+    
+    private int speedIncrement;
+    
     /**
      *  creating an 2d array for the map/road
      */
@@ -56,7 +60,10 @@ public class MyWorld extends World
         healthDisplay = new HealthDisplay(hp);
         addObject(healthDisplay, 720, 80);
         
-        //showText("HP: " + hp, 720, 80);
+        
+        balloonCounter = 0;
+        
+        speedIncrement = 0;
         
         Level1();
         
@@ -74,7 +81,6 @@ public class MyWorld extends World
             worldTime++;
         }
     }
-
     
     /**
      * level one 
@@ -137,6 +143,13 @@ public class MyWorld extends World
         
             if (hp <= 0) {
                 endGame();
+        }
+    }
+    
+    public void balloonPopped() {
+        balloonCounter++;
+        if (balloonCounter % 10 == 0) {
+            speedIncrement++;
         }
     }
     
