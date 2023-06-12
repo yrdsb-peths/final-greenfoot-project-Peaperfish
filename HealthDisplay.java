@@ -29,3 +29,4 @@ public class HealthDisplay extends Actor
         setImage(image);
     }
 }
+

@@ -142,15 +142,13 @@ public class MyWorld extends World
     
     public void decreaseHP(int amount) {
         hp -= amount;
-        
-        HealthDisplay healthDisplay = getObjects(HealthDisplay.class).get(0);
         healthDisplay.updateHP(hp);
 
-        // Check if the game should end (HP reaches 0)
         if (hp <= 0) {
             endGame();
         }
     }
+
 
     private void endGame() {
         gameEnded = true;
