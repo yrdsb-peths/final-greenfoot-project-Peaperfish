@@ -35,7 +35,7 @@ public class Tower extends Actor {
         List<Enemy> enemies = getObjectsInRange(100, Enemy.class);
         
         for(Enemy eachEnemy : enemies) {
-            if(fireRate > 11) {
+            if(fireRate >= 10) {
                 Projectile projectile = new Projectile();
                 getWorld().addObject(projectile, getX(), getY());
                 projectile.turnTowards(eachEnemy.getX(), eachEnemy.getY());
