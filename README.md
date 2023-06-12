@@ -38,8 +38,12 @@ This game is released under the [MIT License](https://github.com/yrdsb-peths/fin
   - Part 3: https://youtu.be/GT-eFwa4Abc
  
 - Art asset:
-  - Tower  asset from [Unity](https://assetstore.unity.com/packages/2d/environments/isometric-tower-defense-pack-183472)
+  - Tower asset from [Unity](https://assetstore.unity.com/packages/2d/environments/isometric-tower-defense-pack-183472)
   - Grass Road asset from [2dgameartguru.com](https://2dgameartguru.com/creating-seamless-2d-grass-tiles-in-vectors-using-inkscape/)
+  - Title Screen background [freepik.com](https://www.freepik.com/free-vector/desert-landscape-background-theme_9899809.htm)
+  - End Screen background [pond5.com](https://www.pond5.com/stock-footage/item/87695254-retro-game-try-again-computer-message-alpha-channel)
+  - Try Again button [smilenihongo.com](https://smilenihongo.com/katakana-quiz-4)
+  - All other art assets are from the Greenfoot images folder.
 
 ## Cheats/Dev tools
 - Press on the money label will reset the money to $100.
