@@ -13,6 +13,9 @@ This is a simplified version of [Bloon TD 6](https://ninjakiwi.com/Games/Mobile/
 - Each Balloon popped will reward player with $25.
 - Each Balloon missed/passed through will deal 10 DMG to player.
 - The Balloons will speed up as going down the line.
+  - Starting with: ![balloon1](https://github.com/yrdsb-peths/final-greenfoot-project-Peaperfish/assets/82687988/0a33fc38-ed18-4332-ad37-780a6c90ef44)
+  - After 10 pops: ![balloon2](https://github.com/yrdsb-peths/final-greenfoot-project-Peaperfish/assets/82687988/6979741a-f485-4135-9ede-029f6df11e6f)
+  - After 20 pops: ![balloon3](https://github.com/yrdsb-peths/final-greenfoot-project-Peaperfish/assets/82687988/01a86e1c-9ebc-4c14-ac5d-a22b0d955d55)
 
 ## Controls
 
