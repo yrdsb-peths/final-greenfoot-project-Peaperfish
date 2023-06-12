@@ -11,8 +11,8 @@ This is a simplified version of [Bloon TD 6](https://ninjakiwi.com/Games/Mobile/
 - Mouse Left Click to place down a Tower.
 - Each Tower cost $50.
 - Each Balloon popped will reward player with $25.
-- Each Balloon missed will deal 10 DMG to player.
-
+- Each Balloon missed/passed through will deal 10 DMG to player.
+- The Balloons will speed up as going down the line.
 
 ## Controls
 
@@ -39,6 +39,9 @@ This game is released under the [MIT License](https://github.com/yrdsb-peths/fin
 - Art asset:
   - Tower  asset from [Unity](https://assetstore.unity.com/packages/2d/environments/isometric-tower-defense-pack-183472)
   - Grass Road asset from [2dgameartguru.com](https://2dgameartguru.com/creating-seamless-2d-grass-tiles-in-vectors-using-inkscape/)
+
+## Cheats/Dev tools
+- Press on the money label will reset the money to $100.
 
 
 
