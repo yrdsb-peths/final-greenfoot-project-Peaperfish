@@ -13,7 +13,7 @@ public class Enemy extends Actor {
     MyWorld world;
     
     // ballons hp
-    public int health = 6;
+    public int health = 8;
     
     public Enemy(int level) {
         if(level == 1) {
