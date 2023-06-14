@@ -55,7 +55,7 @@ public class MyWorld extends World
         Menu menu = new Menu();
         addObject(menu,730,230);
         menu.setLocation(720,300);
-        addObject(new MoneyDisplay(), 720, 30);
+        addObject(new MoneyDisplay(), 720, 200);
         
         healthDisplay = new HealthDisplay(hp);
         addObject(healthDisplay, 720, 80);
