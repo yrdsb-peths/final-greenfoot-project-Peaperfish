@@ -22,7 +22,7 @@ public class MyWorld extends World
     
     private boolean gameEnded;
     
-    private HealthDisplay healthDisplay;
+    //private HealthDisplay healthDisplay;
     
     private int balloonCounter;
     
@@ -57,8 +57,8 @@ public class MyWorld extends World
         menu.setLocation(720,300);
         addObject(new MoneyDisplay(), 720, 200);
         
-        healthDisplay = new HealthDisplay(hp);
-        addObject(healthDisplay, 720, 80);
+        //healthDisplay = new HealthDisplay(hp);
+        //addObject(healthDisplay, 720, 80);
         
         
         balloonCounter = 0;
@@ -155,7 +155,7 @@ public class MyWorld extends World
     
     public void decreaseHP(int amount) {
         hp -= amount;
-        healthDisplay.updateHP(hp);
+        //healthDisplay.updateHP(hp);
 
         if (hp <= 0) {
             endGame();
